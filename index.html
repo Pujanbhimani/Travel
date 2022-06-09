@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--------- Font-awsome --------->	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<!---------Bootsrap--------->
+
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!--------- CSS --------->
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!------------- Header ---------------->
+
+
+	<header>
+		
+			<!--------- Categories --------->
+
+		<div class=" Categories_1 d-flex justify-content-between my-3">
+			<div>
+				<span onclick="myFunction()"><i class="fa fa-th mr-2"></i> Categories </span>
+
+				<ul id="mycategories">
+					<li><a href="#">HOME&GARDEN (15)</a></li>
+					<li><a href="#">TRAVEL (23)</a></li>
+					<li><a href="#">ELECTRONICS (34)</a></li>
+					<li><a href="#">OFFICE (5)</a></li>
+					<li><a href="#">CARS (51)</a></li>
+					<li><a href="#">PETS (8)</a></li>
+					<li><a href="#">FASHION (29)</a></li>
+				</ul>
+
+			</div>
+
+			<span><i class="fas fa-envelope mr-3"></i><a href="#">info@sitename.com</a></span>
+		</div>
+
+		<img src="img/line.png" class="line-img">
+
+
+			<!--------- Nav --------->
+
+		<div class="nav_ d-flex justify-content-between align-items-center py-5 ">
+			<div class="left-nav">
+				<a href="#" class="pl-0">RECENT POSTS</a>
+				<a href="#">POPULAR</a>
+				<a href="#">MOST READ</a>
+			</div>
+			<div>
+				<a href="#"><img src="img/logo.png"></a>
+			</div>
+			<div class="right-nav">
+				<a href="#">HOT STUFF</a>
+				<a href="#">TOP OF THE WEEK</a>
+				<a href="#" class="pr-0">MUST READ</a>
+			</div>
+
+			<span class="fas fa-bars"></span>
+		</div>
+
+	</header>
+
+ 
+
+
+<!------------- Slider banner ---------------->
+
+
+	<div class="container_ text-center">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#demo" data-slide-to="0" class="active"></li>
+			    <li data-target="#demo" data-slide-to="1"></li>
+			    <li data-target="#demo" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+				   
+				    	<div class="carousel-item active">
+				    		<a href="Post page.html">
+						    	<div class="carousel-img">
+						     		 <img src="img/img7.jpg" alt="Los Angeles" >
+						    	</div>
+						    </a>
+						    <div class="carousel-caption">
+						      	<button class="btn btn_">Travel</button>
+						        <h1>A Set of The Most Necessary<br> Things on Vacation</h1>
+						        <p>JUN 06 - <img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+						    </div>   
+					    </div>
+				    
+				    <div class="carousel-item">
+				    	<a href="Post page.html">
+					    	<div class="carousel-img">
+					     		 <img src="img/img8.jpg" alt="Los Angeles" >
+					    	</div>
+					    </a>
+				        <div class="carousel-caption">
+				        	<button class="btn btn_">Travel</button>
+					        <h1>A Set of The Most Necessary<br> Things on Vacation</h1>
+					        <p>JUN 06 - <img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+				        </div>   
+				    </div>
+
+				    <div class="carousel-item">
+				    	<a href="Post page.html">
+					      	<div class="carousel-img">
+					     	 	<img src="img/img9.jpg" alt="Los Angeles" >
+					     	</div>
+					     </a>
+				      	<div class="carousel-caption">
+							<button class="btn btn_">Travel</button>
+					        <h1>A Set of The Most Necessary<br> Things on Vacation</h1>
+					        <p>JUN 06 - <img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+				      	</div>   
+				    </div>
+			  </div>
+			  <a class="carousel-control-prev " href="#demo" data-slide="prev" style=" width: auto; margin: 0 0 0 20px;">
+			   <i class="fas fa-angle-left" style="color: black;font-size: 5rem;"></i>
+			  </a>
+			  <a class="carousel-control-next" href="#demo" data-slide="next" style=" width: auto; margin: 0 20px 0 0;">
+			     <i class="fas fa-angle-right " style="color: black;font-size: 5rem;"></i>
+			  </a>
+		</div>
+	</div>
+
+
+<!------------- Full Banner ---------------->
+
+
+	<section>
+		<div class="full-banner  my-5  text-center">
+			<img src="img/bad3.jpg" width="100%">
+		</div>
+	</section>
+
+
+<!------------- Recent Stories ---------------->
+
+
+	<section>
+		<div class="Stories">
+			<div class="title row no-gutters ">
+				<h1 class="">Recent Stories</h1>
+			</div>
+
+			<!--------- Tow Section --------->
+
+			<div class="two-section row no-gutters ">
+	
+				<!--------- left-side --------->
+
+				<div class="section_1 col-xl-9 col-lg-12 col-md-12 no-gutters ">
+				
+					<div class="box row no-gutters col-12">
+						<div class="img-box col-lg-4 col-md-4 col-12">
+							<button class="btn btn_">Travel</button>
+							<a href="Post page.html"  target="new">
+								<img src="img/img14.jpg">
+							</a>
+						</div>
+
+						<div class="detail col-lg-8 col-md-8 col-12">
+							<h1>Selection Of Very Comfortable Furniture For Relaxing On The Terrace</h1>
+							<p>A breakdown or a flat tire can happen to anyone at any time, and what you have in your car can make the difference between getting back on the ...</p>
+							<div class="date">
+								 <p>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+								 <div class="arrow">
+								 	<a href="Post page.html" target="new">
+								 		<i class="fas fa-angle-right"></i>
+								 	</a>
+								 </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box row no-gutters col-12">
+						<div class="img-box col-lg-4 col-md-4 col-12">
+							<button class="btn btn_">Travel</button>
+							<a href="Post page.html" target="new">
+								<img src="img/img15.jpg">
+							</a>
+						</div>
+
+						<div class="detail col-lg-8 col-md-8 col-12">
+							<h1>Selection Of Very Comfortable Furniture For Relaxing On The Terrace</h1>
+							<p>A breakdown or a flat tire can happen to anyone at any time, and what you have in your car can make the difference between getting back on the ...</p>
+							<div class="date">
+								 <p>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+								 <div class="arrow">
+								 	<a href="Post page.html" target="new">
+									 	<i class="fas fa-angle-right"></i>
+									 </a>
+								 </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box row no-gutters col-12">
+						<div class="img-box col-lg-4 col-md-4 col-12">
+							<button class="btn btn_">Travel</button>
+							<a href="Post page.html" target="new">
+								<img src="img/img16.jpg">
+							</a>
+						</div>
+
+						<div class="detail col-lg-8 col-md-8 col-12">
+							<h1>Selection Of Very Comfortable Furniture For Relaxing On The Terrace</h1>
+							<p>A breakdown or a flat tire can happen to anyone at any time, and what you have in your car can make the difference between getting back on the ...</p>
+							<div class="date">
+								 <p>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+								 <div class="arrow">
+								 	<a href="Post page.html" target="new">
+								 		<i class="fas fa-angle-right"></i>
+								 	</a>
+								 </div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<!--------- right-side --------->
+
+
+				<div class="section_2 col-xl-3 col-lg-12 col-12 " >
+					<div class="row">
+						<div class="box col-xl-12 col-lg-6 col-sm-6 col-md-6 col-12">
+							<div class="img-box">
+								<a href="Post page.html" target="new" >
+									<img src="img/img2.jpg">
+								</a>
+							</div>
+							<div class="date">
+								<p>JUN 06,2021&nbsp; - &nbsp; #PETS</p>
+							</div>
+							<a href="Post page.html" target="new" style="text-decoration: none;">
+								<h1>Fresh Home Photo Session. See How We Love Our Pets</h1>
+							</a >
+						</div>
+
+						<div class="box col-xl-12 col-lg-6 col-sm-6 col-md-6 col-12">
+							<div class="img-box">
+								<a href="Post page.html" target="new">
+									<img src="img/img3.jpg">
+								</a>
+							</div>
+							<div class="date">
+								<p>JUN 06,2021&nbsp; - &nbsp; #PETS</p>
+							</div>
+							<a href="Post page.html" target="new" style="text-decoration: none;">
+								<h1>Fresh Home Photo Session. See How We Love Our Pets</h1>
+							</a >
+						</div>		
+
+						<div class="box col-xl-12 col-lg-6 col-sm-6 col-md-6 col-12 ">
+							<div class="img-box">
+								<a href="Post page.html" target="new">
+									<img src="img/img17.jpg">
+								</a >
+							</div>
+							<div class="date">
+								<p>JUN 06,2021&nbsp; - &nbsp; #PETS</p>
+							</div>
+							<a href="Post page.html" target="new" style="text-decoration: none;">
+								<h1>Fresh Home Photo Session. See How We Love Our Pets</h1>
+							</a >
+						</div>				
+					</div>	
+
+					<div>
+						<a href="#" class="btn">VIEW ALL</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+<!------------- Popular Posts --------------->
+
+
+	<section>
+		
+			<div class="post_1">
+				<div class="title row no-gutters ">
+					<h1 class="">Recent Stories</h1>
+					<a href="#">VIEW ALL POST &nbsp;<i class="fas fa-arrow-right"></i></a>
+				</div>
+
+				<!--------- Comments --------->
+
+				<div class="row main">
+
+					<div class="box col-xl-4 col-sm-12 ">
+						<div class="comments d-flex justify-content-start align-items-center">
+							<div class="img-box ">
+								<a href="Post page.html" target="new" style="text-decoration: none;">
+									<img src="img/img4.jpg">
+								</a>
+							</div>
+							<div class="date ml-5">
+								<a href="Post page.html" target="new" style="text-decoration: none;">
+									<h1>The Best Indoor Plants To Create Comfort At Home</h1>
+								</a>
+								<p>JUN 06&nbsp; - &nbsp; #TRAVEL &nbsp; - &nbsp; <i class="fas fa-comment"></i> 5</p>
+							</div> 
+						</div>
+
+						<div class="comments d-flex justify-content-start align-items-center">
+							<div class="img-box">
+								<a href="Post page.html" target="new" style="text-decoration: none;">
+									<img src="img/img16.jpg">
+								</a>
+							</div>
+							<div class="date ml-5">
+								<a href="Post page.html" target="new" style="text-decoration: none;">
+									<h1>The Best Indoor Plants To Create Comfort At Home</h1>
+								</a>
+								<p>JUN 06&nbsp; - &nbsp; #OFFICE &nbsp; - &nbsp; <i class="fas fa-comment"></i> 6</p>
+							</div> 
+						</div>
+
+						<div class="comments d-flex justify-content-start align-items-center">
+							<div class="img-box">
+								<a href="Post page.html" target="new" style="text-decoration: none;">
+									<img src="img/img19.jpg">
+								</a>
+							</div>
+							<div class="date ml-5">
+								<a href="Post page.html" target="new" style="text-decoration: none;">
+									<h1>The Best Indoor Plants To Create Comfort At Home</h1>
+								</a>
+								<p>JUN 06&nbsp; - &nbsp; #TRAVEL &nbsp; - &nbsp; <i class="fas fa-comment"></i> 3</p>
+							</div> 
+						</div>
+
+						<div class="comments d-flex justify-content-start align-items-center">
+							<div class="img-box">
+								<a href="Post page.html" target="new" style="text-decoration: none;">
+									<img src="img/img6.jpg">
+								</a>
+							</div>
+							<div class="date ml-5" >
+								<a href="Post page.html" target="new" style="text-decoration: none;">
+									<h1>The Best Indoor Plants To Create Comfort At Home</h1>
+								</a>
+								<p>JUN 06&nbsp; - &nbsp; #TRAVEL &nbsp; - &nbsp; <i class="fas fa-comment"></i> 8</p>
+							</div> 
+						</div>
+					</div>
+
+
+					<div class="col-xl-8 col-sm-12">
+						<div class="cosmetics"> 
+							<div class="img-box">
+								<img src="img/img18.jpg">
+								<div class="detail">
+									<span>JUN 06&nbsp; - &nbsp; #COSMETIC </span>								
+									<h1>Universal Cream For Any Type Of Skin</h1>	
+									<p>A breakdown or a flat tire can happen to anyone at any time, and...</p>
+									<a href="Post page.html"> READ MORE <i class="fas fa-arrow-right"></i> </a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+	</section>
+
+
+<!------------- Full banner --------------->
+
+	<section>
+		<div class="full-banner   text-center">
+			<img src="img/bad4.jpg" width="100%">
+		</div>
+	</section>
+
+
+<!------------- Most Read Post --------------->
+
+
+	<section>
+		
+		<div class="post_2 row">
+			<div class="post-box col-xl-9 col-lg-12 col-md-12">
+				<div class="title row no-gutters ">
+					<h1 class="">Most Read Post</h1>
+					<a href="#">VIEW ALL POST &nbsp;<i class="fas fa-arrow-right"></i></a>
+				</div>
+
+				<div class="row ">
+					<div class="box col-xl-6 col-lg-6 col-sm-6 ">
+						<div class="inside-box">
+							<div class="img-box" >
+								<button class="btn btn_">Travel</button>
+								<a href="Blog page.html" target="new" style="text-decoration: none;">
+									<img src="img/img20.jpg" width="100%">
+								</a>
+							</div>
+								<h1>How To Create A Cozy Scent In Any Room Using Only ...</h1>
+							<div class="date">
+								 <p>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+								 <div class="arrow">
+								 	<i class="fas fa-angle-right"></i>
+								 </div>
+							</div>
+						</div>
+					</div>	
+
+					<div class="box col-xl-6 col-lg-6 col-lg-6 col-sm-6">
+						<div class="inside-box">
+							<div class="img-box">
+								<button class="btn btn_">Travel</button>
+								<a href="Blog page.html" target="new" style="text-decoration: none;">
+									<img src="img/img21.jpg" width="100%">
+								</a>
+							</div>
+								<h1>Pets Of Our Gardeners. All About Care And Fertilizers</h1>
+							<div class="date">
+								<p>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+								<div class="arrow">
+									<i class="fas fa-angle-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>	
+
+					<div class="box col-xl-6 col-lg-6 col-lg-6 col-sm-6">
+						<div class="inside-box">
+							<div class="img-box">
+								<button class="btn btn_">Travel</button>
+								<a href="Blog page.html" target="new" style="text-decoration: none;">
+									<img src="img/img22.jpg" width="100%">
+								</a>
+							</div>
+								<h1>How To Properly Illuminate The Workplace So As Not To Stra...</h1>
+							<div class="date">
+								<p>JUN 06,2021&nbsp; - &nbsp; #PETS</p>
+								<div class="arrow">
+							 		<i class="fas fa-angle-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>	
+ 
+					<div class="box col-xl-6 col-lg-6 col-lg-6 col-sm-6">
+						<div class="inside-box">
+							<div class="img-box">
+								<button class="btn btn_">Travel</button>
+								<a href="Blog page.html" target="new" style="text-decoration: none;">
+									<img src="img/img23.jpg" width="100%">
+								</a>
+							</div>
+								<h1>Fresh Home Photo Session. See How We Love Our Pets</h1>
+							<div class="date">
+								<p>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</p>
+								<div class="arrow">
+							 		<i class="fas fa-angle-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+
+			</div>
+
+			<div class="ctgory-box col-xl-3 col-lg-12 col-md-12">
+				<div class="title row no-gutters ">
+					<h1 class="">Categories</h1>
+				</div>
+
+				<div class="categories_2">
+					<ul>
+						<li><a href="Post page.html">HOME&GARDEN (15)</li></a>
+						<li><a href="Post page.html">TRAVEL (23)</a></li>
+						<li><a href="Post page.html">ELECTRONICS (34)</a></li>
+						<li><a href="Post page.html">OFFICE (5)</a></li>
+						<li><a href="Post page.html">CARS (51)</a></li>
+						<li><a href="Post page.html">PETS (8)</a></li>
+						<li><a href="Post page.html">FASHION (29)</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<img src="img/bad2.jpg" class="img-fluid">
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+<!------------- Sunscribe --------------->
+
+	<section>
+		
+		<div class="subscribe ">
+			<h1>Stay Up To Date! Sunscribe!</h1>
+			<form >
+				<input type="email" name="" placeholder="Your email">
+				<button>SUBSCRIBE</button> 
+			</form>
+		</div>
+
+	</section>
+
+
+
+<!------------- Hot Stuff --------------->
+
+
+
+	<section>
+		
+
+		<div class="hot-stuff ">
+			
+			<div class="title row ">
+				<h1 class="">Hot Stuff</h1>
+			</div>
+
+			<div class="row no-gutters">
+				<div class="col-xl-8 img-box">
+					<img src="img/img13.jpg">
+				</div>
+
+				<div class="col-xl-4">
+					<button class="btn btn_">Travel</button>
+					<h1>The Best Solutions For The Interior Of A Bedroom In An Apartment</h1>
+					<p>A breakdown or a flat tire can happen to anyone at any time, and what you have in your car can make the difference between getting back ...</p>
+					<span>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</span>
+					<a href="#">READ MORE &nbsp;<i class="fas fa-arrow-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+
+
+
+<!------------- Top Of Te Week --------------->
+
+
+
+	<section>
+		
+		<div class="topofweek">
+			
+			<div class="title row  ">
+				<h1 class="">Most Read Post</h1>
+				<a href="#">VIEW ALL POST &nbsp;<i class="fas fa-arrow-right"></i></a>
+			</div>
+
+			<div class="row justify-content-center">
+					<div class="box col-xl-4 col-sm-6 ">
+						<div class="img-box">
+							<img src="img/img10.jpg">
+						</div>
+						<div>
+							<button class="btn btn_">FASHION</button>
+							<button class="btn btn_">PETS</button>
+						</div>
+						<h1>A New Trend Of A Photo Shoot With Pets Is Gaining High Popularity Amo...</h1>
+						<span>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</span>
+						<a href="#">READ MORE &nbsp;<i class="fas fa-arrow-right"></i></a>
+					</div>
+				
+					<div class="box col-xl-4 col-sm-6">
+						<div class="img-box">
+							<img src="img/img11.jpg">
+						</div>
+						<button class="btn btn_">PETS</button>
+						<h1>A New Trend Of A Photo Shoot With Pets Is Gaining High Popularity Amo...</h1>
+						<span>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</span>
+						<a href="#">READ MORE &nbsp;<i class="fas fa-arrow-right"></i></a>
+					</div>
+				
+					<div class="box col-xl-4 col-sm-6">
+						<div class="img-box">
+							<img src="img/img12.jpg">
+						</div>
+						<button class="btn btn_">BOOKS</button>
+						<h1>A New Trend Of A Photo Shoot With Pets Is Gaining High Popularity Amo...</h1>
+						<span>JUN 06,2021&nbsp; - &nbsp;<img src="img/ava.png" class="pro-img">Marie Caphlish</span>
+						<a href="#">READ MORE &nbsp;<i class="fas fa-arrow-right"></i></a>
+					</div>
+			</div>
+
+		</div>
+
+		<img src="img/line.png" class="line img-fluid my-5" width="100%">
+
+	</section>
+
+
+
+<!------------- Footer --------------->
+
+
+	<footer>
+		
+		<div class="footer">
+			<div class="row">
+				<div class="col-xl-4">
+					<div class="strong">
+						<strong>About</strong>
+					</div>
+					<p>We have much planned for the future, working with great clients and continued software development. If you'd like to join our team, then we'd also love to hear from you.</p>
+				</div>
+
+				<div class="col-xl-5">
+					<div class="strong">
+						<strong>Categories</strong>
+					</div>
+					<div class="row">
+						<ul class="col-4">
+							<li><a href="#">HOME</a></li>
+							<li><a href="#">kitchen</a></li>
+							<li><a href="#">garden</a></li>
+							<li><a href="#">cars</a></li>
+							<li><a href="#">travel</a></li>
+						</ul>
+						<ul class="col-4">
+							<li><a href="#">pets</a></li>
+							<li><a href="#">office</a></li>
+							<li><a href="#">electronics</a></li>
+							<li><a href="#">hobby</a></li>
+							<li><a href="#">baby</a></li>
+						</ul>
+						<ul class="col-4">
+							<li><a href="#">holiday</a></li>
+							<li><a href="#">software</a></li>
+							<li><a href="#">health</a></li>
+							<li><a href="#">appliences</a></li>
+							<li><a href="#">money</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-xl-3">
+					<div class="strong">
+						<strong>Follow Us</strong>
+					</div>
+					<div class="icon_">
+						<div>
+							<i class="fab fa-facebook-f"></i>
+							<span>2.1k+</span>
+						</div>
+						<div>
+							<i class="fab fa-twitter"></i>
+							<span>7.3k+</span>
+						</div>
+						<div>
+							<i class="fab fa-instagram"></i>
+							<span>10.3k+</span>
+						</div>
+						<div>
+							<i class="fab fa-youtube"></i>
+							<span>200k+</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-footer d-flex justify-content-between" >
+				<span>© Benchy 2021. All rights reserved</span>
+				<span><a href="#">Privacy Policy&nbsp; - &nbsp;Terms & Conditions</a></span>
+			</div>
+		</div>
+
+	</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------- Script --------->
+
+	<script type="text/javascript" href="js/script.js"></script>
+
+
+	<script>
+		// 		function myFunction() {
+		// 	var x = document.getElementById("mycategories");
+
+		// 	if (x.style.display == "none") {
+		// 	   x.style.display = "block";	
+		// 	}
+
+		// 	else{
+		// 		x.style.display = "none";
+		// 	}
+		// }
+	</script>
+</body>
+</html>
